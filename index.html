@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Kalkulator Wydatków</title>
+</head>
+<body>
+    <header>
+        <p>Kalkulator Wydatków</p>
+        <img src="logo.png" alt="logo">
+    </header>
+    <main>
+        <div id="skrypt">
+            <h2>Dodaj osobę</h2>
+            <input type="text" id="person-name" placeholder="Imię">
+            <input type="number" id="person-value" placeholder="Wartość">
+            <button onclick="addPerson()">Dodaj</button>
+
+            <h2>Lista osób</h2>
+            <ul id="person-list"></ul>
+            
+            <h2>Suma wartości</h2>
+            <div id="sum">0</div>
+            
+            <h2>Różnice wyników</h2>
+            <ul id="differences"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>Dominik Klemczak &copy 2023</p>
+    </footer>
+</body>
+</html>
